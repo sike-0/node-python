@@ -8,6 +8,7 @@ app.use(express.static('public'));
 
 app.get('/make', (req, res) => {
     exec('python3 maker.py', () => { })
+    res.write("Yes")
     res.end()
 });
 
